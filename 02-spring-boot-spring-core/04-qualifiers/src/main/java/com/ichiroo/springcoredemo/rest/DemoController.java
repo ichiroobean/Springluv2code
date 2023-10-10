@@ -2,6 +2,7 @@ package com.ichiroo.springcoredemo.rest;
 
 import com.ichiroo.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,7 @@ public class DemoController {
 //    }
 
     @Autowired
-    public void dm(Coach theCoach){
+    public void dm(@Qualifier("baseballCoach") Coach theCoach){
         myCoach = theCoach;
     }
     @GetMapping("/dailyworkout")
