@@ -16,7 +16,7 @@ public class DemoController {
 //    }
 
     @Autowired
-    public void dm(@Qualifier("baseballCoach") Coach theCoach){
+    public void dm( Coach theCoach){
         myCoach = theCoach;
     }
     @GetMapping("/dailyworkout")
