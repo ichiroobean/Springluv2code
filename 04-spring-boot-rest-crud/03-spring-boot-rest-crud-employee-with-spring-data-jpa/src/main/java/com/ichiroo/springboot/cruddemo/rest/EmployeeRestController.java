@@ -1,6 +1,5 @@
 package com.ichiroo.springboot.cruddemo.rest;
 
-import com.ichiroo.springboot.cruddemo.dao.EmployeeDAO;
 import com.ichiroo.springboot.cruddemo.entity.Employee;
 import com.ichiroo.springboot.cruddemo.service.EmployeeService;
 import org.springframework.web.bind.annotation.*;
