@@ -22,7 +22,7 @@ public class Employee {
     private String email;
 
 
-    // define constructor  shjhjh
+    // define constructor
     public Employee() {
 
     }
